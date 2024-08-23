@@ -15,6 +15,14 @@
     .manrope {
       font-family: "Manrope", system-ui;
     }
+
+    .bg_img {
+      background-image: url("../assets/bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
   </style>
 </head>
 
@@ -89,10 +97,10 @@
       </div>
     </section>
   </header>
-  <main class="bg-[#F4F4F4] px-5 lg:px-0">
+  <main class="bg-[#F4F4F4]  lg:px-0">
     <!-- design section  -->
     <section
-      class="container mt-9 lg:mt-28 lg:px-14 mx-auto lg:flex items-center justify-between pt-8 pb-8 lg:pt-24 lg:pb-24">
+      class="container mt-9 lg:mt-28 px-5 lg:px-14 mx-auto lg:flex items-center justify-between pt-8 pb-8 lg:pt-24 lg:pb-24">
       <!-- content div  -->
       <div class="relative lg:w-2/5">
         <div class="absolute -top-12 -left-12 hidden lg:flex">
@@ -141,7 +149,7 @@
     </section>
 
     <!-- Work Section  -->
-    <section class="container mt- 9 lg:mt- 28 lg:px-14  mx-auto pt-8 pb-8 lg:pt-0 lg:pb-24">
+    <section class="container px-5 lg:px-14  mx-auto pt-8 pb-8 lg:pt-0 lg:pb-24">
       <!-- content div  -->
       <div class="flex flex-col items-center space-y-6">
         <button class="btn bg-white  px-5 py-2 rounded-3xl font-bold text-[#494949]">
@@ -192,7 +200,7 @@
 
     <!-- portfolio section  -->
     <div class="lg:bg-white">
-      <section class=" container lg:px-14  mx-auto pb-8 lg:pt-24 lg:pb-24">
+      <section class=" container px-5 lg:px-14  mx-auto pb-8 lg:pt-24 lg:pb-24">
         <!-- title div  -->
         <div class=" flex flex-col items-center space-y-6">
           <button class="btn bg-[#ABEF5F33]  px-5 py-2 rounded-3xl font-bold text-[#494949]">
@@ -211,11 +219,12 @@
             <div>
               <img class="h-full w-full" src="./assets/img1.png" alt="">
             </div>
-            <div class="lg:w-7/12">
+            <div class="lg:w-7/12 lg:flex flex-col justify-between">
               <h1 class="text-xl lg:text-2xl font-extrabold mt-6 lg:mt-0">Commercial</h1>
               <p class="text-[#737373] mt-4">
-                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its
-                blend of rustic charm and modern .
+                The barn house captivates with its blend of rustic charm <br> and modern. The barn house captivates with
+                its
+                blend of <br> rustic charm and modern .
               </p>
               <button class=" flex mt-6  lg:text-xl font-extrabold">View Details
                 <h6 class="bg-[#ABEF5F] rounded-full p-3 w-8 h-8 flex items-center justify-center -rotate-45 ml-2 ">
@@ -233,14 +242,15 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-6 mt-4 lg:mt-6">
           <!-- img3  -->
           <div class="border border-[#E9E9E9] rounded-2xl bg-white p-6 col-span-1 mt-4 lg:mt-0 order-4 lg:order-1">
-            <img class="h-auto w-full" src="./assets/img3.png" alt="">
+            <img class="h-full w-full" src="./assets/img3.png" alt="">
           </div class>
           <!-- card2  -->
-          <div class="lg:flex border p-6 border-[#E9E9E9] bg-white rounded-2xl lg:space-x-6 col-span-2 mt-4 lg:mt-0 order-3 lg:order-2">
+          <div
+            class="lg:flex border p-6 border-[#E9E9E9] bg-white rounded-2xl lg:space-x-6 col-span-2 mt-4 lg:mt-0 order-3 lg:order-2">
             <div>
               <img class="h-full w-full" src="./assets/img4.png" alt="">
             </div>
-            <div class="lg:w-1/2">
+            <div class="lg:w-1/2 lg:flex flex-col justify-between">
               <h1 class="text-xl lg:text-2xl font-extrabold mt-6 lg:mt-0">Commercial</h1>
               <p class="text-[#737373] mt-4">
                 The barn house captivates with its blend of rustic charm and modern.
@@ -253,13 +263,49 @@
             </div>
           </div>
           <!-- img5  -->
-          <div class="border border-[#E9E9E9] rounded-2xl bg-white p-6 col-span-1 mt-4 lg:mt-0 order-2 lg:order-3">
+          <div class="border border-[#E9E9E9] rounded-2xl bg-white p-6 col-span-1 order-2 lg:order-3">
             <img class="h-full w-full" src="./assets/img5.png" alt="">
           </div>
         </div>
       </section>
     </div>
 
+    <!-- discuss section  -->
+    <section class="bg_img border-y-2 lg:border-y-8 border-white px-5 lg:px-60 py-8 lg:py-24 mx-auto">
+      <!-- title div  -->
+      <div class=" flex flex-col items-center space-y-6">
+        <button class="btn bg-[#ABEF5F33]  px-5 py-2 rounded-3xl font-bold text-[#494949]">
+          <h6><i class="fa-solid fa-arrow-right transform scale-x-[1.5]"></i></h6> Let’s Connect
+        </button>
+        <h1 class="text-2xl lg:text-4xl text-center text-[#212121] font-bold">Let’s Discuss Next <br class="lg:hidden"> Project</h1>
+        <p class="text-[#494949] lg:w-7/12 text-center">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+          sleek metal accents.
+        </p>
+      </div>
+      <!-- grid section  -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+        <input type="text" placeholder="First Name*"
+          class="input border border-[#E9E9E9] bg-white text-[#A0A0A0] text-base w-full rounded-[64px] p-5" />
+        <input type="text" placeholder="Last Name*"
+          class="input border border-[#E9E9E9] bg-white text-[#A0A0A0] text-base w-full rounded-[64px] p-5" />
+        <input type="text" placeholder="Phone Number*"
+          class="input border border-[#E9E9E9] bg-white text-[#A0A0A0] text-base w-full rounded-[64px] p-5" />
+        <input type="text" placeholder="Email Number*"
+          class="input border border-[#E9E9E9] bg-white text-[#A0A0A0] text-base w-full rounded-[64px] p-5" />
+      </div>
+      <div class="mt-6">
+        <textarea placeholder="Write your message here" class="textarea textarea-lg border border-[#E9E9E9] bg-white text-[#A0A0A0] text-base w-full rounded-[32px] h-60 resize-none"></textarea>
+      </div>
+      <div class="mt-11">
+        <a class="flex btn bg-[#ABEF5F] text-[#1C1C1C] font-extrabold text-xl rounded-full px-5">
+          Send Mail
+          <h6 class="bg-[#1C1C1C] text-white rounded-full p-2 w-8 h-8 flex items-center justify-center -rotate-45">
+            <i class="fa-solid fa-arrow-right transform scale-x-125"></i>
+          </h6>
+        </a>
+      </div>
+    </section>
 
 
 
